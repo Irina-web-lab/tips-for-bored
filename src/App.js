@@ -7,7 +7,7 @@ function App() {
   const [type, setType] = useState("");
 
     const fetchTips = async () => {
-    const response = await fetch("http://www.boredapi.com/api/activity/");
+    const response = await fetch("https://www.boredapi.com/api/activity/");
     const data = await response.json();
     setTips(data.activity);
     setType(data.type);
